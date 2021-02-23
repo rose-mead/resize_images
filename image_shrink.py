@@ -31,7 +31,7 @@ def save_resized_image ():
             img.save(target_file_name, quality=98)
             print(file_name + " saved in original_images directory")
 
-            
+            # save resized image in the 'emma' folder, overwriting the original
         #    print(file_path_original, os.stat(file).st_size)
             file_path_original = os.path.join(SRC_DIR, file_name)
             img.save(file_path_original, quality=25)
